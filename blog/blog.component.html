@@ -1,0 +1,25 @@
+<div id="blog" class="stripe">
+    <div class="container">
+        <div class="row">
+            <div class="offset-1 col-xs-10">
+
+                <h2>Index</h2>
+
+                <ul class="list-group">
+                    
+                    <li class="list-group-item animated slideInUp" ng-repeat="entry in vm.blogList">
+                        <a href="{{entry.blogLink}}" target="_blank">
+                            <span class="blog-title">{{entry.title}}</span>
+                            <span class="blog-date">{{entry.blogDate | date}}</span>
+                            <span class="blog-entry">
+                                {{entry.blogEntry}}
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
