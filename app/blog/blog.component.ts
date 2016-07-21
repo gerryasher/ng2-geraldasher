@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from 'angular2/core';
 
 @Component({
     template: '<h3>{{pageTitle}}</h3>'
