@@ -8,7 +8,7 @@
                 <ul class="list-group">
 
                     <!-- need to switch to ng2 http service -->
-                    <li class="list-group-item animated slideInUp" ng-repeat="link in vm.linkList">
+                    <li class="list-group-item animated slideInUp" *ngFor="#link of links">
                         <a href="{{link.linkUrl}}" target="_blank">
                             <span class="blog-title">{{link.description}}</span>
                         </a>
