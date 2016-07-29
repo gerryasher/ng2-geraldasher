@@ -4,7 +4,13 @@
             <div class="row">
                 <div class="offset-1 col-xs-10">
 
-                    {{pageTitle}}
+                    <h2>Skills</h2>
+
+                    <ul class="list-inline">
+                        <li *ngFor="#skill of skills" class="ng-scope">
+                            <h4><a class="btn btn-default btn-sm ng-binding">{{skill.name}}</a></h4>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
